@@ -1,0 +1,8 @@
+LABEL OPENGEU
+MENU LABEL ^OpenGEU 8.10
+KERNEL er/plugins/opengeu/vmlinuz
+INITRD er/plugins/opengeu/initrd.gz
+APPEND boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/opengeu ramdisk_size=200000 nolock
+TEXT HELP
+                 OpenGEU.
+ENDTEXT
